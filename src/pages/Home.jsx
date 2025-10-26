@@ -93,26 +93,13 @@ function Home() {
       Creative and detail-oriented Video Editor. I have experience creating music videos, short videos, and basic visual effects. Skilled in Adobe Premiere Pro, After Effects, CapCut, as well as basic motion graphics. I enjoy working in a team, adapt easily, and am always excited to bring engaging visual stories to life.
     </motion.p>
 
-    <div className="flex gap-4 mt-4 justify-center md:justify-start">
-  {/* See My Work */}
-  <motion.a href="#portofolio" whileHover={{ scale: 1.05 }}>
-    <button className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
-      <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
-        See My Work
-      </span>
-    </button>
-  </motion.a>
-
-  {/* Download CV */}
-  <motion.a href="/CV-YogaImam.pdf" download whileHover={{ scale: 1.05 }}>
-    <button className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-white rounded-lg group bg-gradient-to-br from-blue-500 to-cyan-500 hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-cyan-200">
-      <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-transparent rounded-md">
-        Download CV
-      </span>
-    </button>
-  </motion.a>
-</div>
-
+    <motion.a href="#portofolio" whileHover={{ scale: 1.05 }}>
+      <button className="relative inline-flex items-center justify-center p-0.5 mt-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+        <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
+          See My Work
+        </span>
+      </button>
+    </motion.a>
     
   </motion.div>
 
