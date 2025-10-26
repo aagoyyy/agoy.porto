@@ -16,11 +16,12 @@ export default function Header() {
     <header className="sticky top-0 z-50 backdrop-blur-md bg-gradient-to-b from-[#00111f]/90 via-[#001a29]/80 to-[#00334d]/70 shadow-[0_4px_20px_rgba(0,0,0,0.4)]">
       <nav className="flex justify-between items-center px-6 md:px-20 py-4">
         {/* Logo */}
-        <img
-          src="/public/logo.png"
+       <img
+          src="/logo.png" 
           alt="Yoga Imam Logo"
           className="h-8 md:h-10 object-contain drop-shadow-[0_0_8px_rgba(6,182,212,0.6)]"
         />
+
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 text-gray-300 font-medium">
