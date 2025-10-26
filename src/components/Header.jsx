@@ -17,7 +17,7 @@ export default function Header() {
       <nav className="flex justify-between items-center px-6 md:px-20 py-4">
         {/* Logo */}
         <img
-          src="/Users/yogasmac/Documents/SINAU/1. portofolio/portfolio-video/public/logo.png"
+          src="/public/logo.png"
           alt="Yoga Imam Logo"
           className="h-8 md:h-10 object-contain drop-shadow-[0_0_8px_rgba(6,182,212,0.6)]"
         />
