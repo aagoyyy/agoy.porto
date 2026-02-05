@@ -5,12 +5,15 @@ import profile from "../assets/profile.png";
 const VideoCard = lazy(() => import("../components/VideoCard")); // lazy load VideoCard
 
 const videos = [
-  { id: 1, title: "Company Profile TEX20S", url: "https://www.youtube.com/embed/4hAE4ExzH44" },
-  { id: 2, title: "Visual Effect Sederhana", url: "https://www.youtube.com/embed/b3MAVGONTpo" },
-  { id: 3, title: "Liputan Fashion", url: "https://www.youtube.com/embed/HAdSXdZIgdI" },
-  { id: 4, title: "Remake Music Video - Sweet Scar", url: "https://www.youtube.com/embed/_fiDhl9BW0Y" },
-  { id: 5, title: "Gaming Anak-Anak", url: "https://www.youtube.com/embed/hq3BpVCnvH8" },
-  { id: 6, title: "Dokumentasi Acara", url: "https://www.youtube.com/embed/wWJN5CgfDzc" },
+  { id: 1, title: "Company Profile TEX20S", url: "https://www.youtube.com/embed/4hAE4ExzH44",orientation:"landscape" },
+  { id: 2, title: "Visual Effect Sederhana", url: "https://www.youtube.com/embed/b3MAVGONTpo", orientation:"landscape" },
+  { id: 3, title: "Liputan Fashion", url: "https://www.youtube.com/embed/HAdSXdZIgdI", orientation:"landscape" },
+  { id: 4, title: "Remake Music Video - Sweet Scar", url: "https://www.youtube.com/embed/_fiDhl9BW0Y", orientation:"landscape" },
+  { id: 5, title: "Gaming Anak-Anak", url: "https://www.youtube.com/embed/hq3BpVCnvH8", orientation:"landscape" },
+  { id: 6, title: "Dokumentasi Acara", url: "https://www.youtube.com/embed/wWJN5CgfDzc", orientation:"landscape" },
+  { id: 7, title: "IDE ITU MURAH?", url: "https://www.youtube.com/embed/t4ANEizx5Ag", orientation: "portrait"},
+  { id: 8, title: "STRATEGI CHINA", url: "https://www.youtube.com/embed/PTZvK5Y9WFQ", orientation: "portrait"},
+  { id: 9, title: "SHORT DRAMA", url: "https://www.youtube.com/embed/u0buD9Hj25c?autoplay=0&loop=1&playlist=u0buD9Hj25c", orientation: "portrait", orientation: "portrait"},
 ];
 
 // ANIMATION VARIANTS
@@ -93,13 +96,29 @@ function Home() {
       Creative and detail-oriented Video Editor. I have experience creating music videos, short videos, and basic visual effects. Skilled in Adobe Premiere Pro, After Effects, CapCut, as well as basic motion graphics. I enjoy working in a team, adapt easily, and am always excited to bring engaging visual stories to life.
     </motion.p>
 
-    <motion.a href="#portofolio" whileHover={{ scale: 1.05 }}>
-      <button className="relative inline-flex items-center justify-center p-0.5 mt-4 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
-        <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
-          See My Work
-        </span>
-      </button>
-    </motion.a>
+    <div className="flex gap-4 mt-4 flex-wrap justify-center md:justify-start">
+  <motion.a href="#portofolio" whileHover={{ scale: 1.05 }}>
+    <button className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+      <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
+        See My Work
+      </span>
+    </button>
+  </motion.a>
+
+  <motion.a 
+    href="/cv.pdf" 
+    target="_blank"
+    rel="noopener noreferrer"
+    whileHover={{ scale: 1.05 }}
+  >
+    <button className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
+      <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent flex items-center gap-2">
+        <i className="fa-solid fa-file-pdf"></i>
+        See My CV
+      </span>
+    </button>
+  </motion.a>
+</div>
     
   </motion.div>
 
@@ -199,62 +218,125 @@ function Home() {
           </div>
         </motion.div>
       </section>
+{/* PORTOFOLIO VIDEO SECTION */}
+<section id="portofolio" className="relative px-6 md:px-20 py-20 text-white overflow-hidden">
+  {/* Background */}
+  <div
+    className="absolute inset-0 bg-center bg-cover"
+    style={{ backgroundImage: "url('/bg2.jpg')" }}
+  >
+    <div className="absolute inset-0 bg-black/50"></div>
+  </div>
 
-      {/* PORTOFOLIO SECTION */}
-      <section id="portofolio" className="relative px-6 md:px-20 py-20 text-white overflow-hidden">
-        {/* Background */}
-        <div className="absolute inset-0 bg-center bg-cover" style={{ backgroundImage: "url('/bg2.jpg')" }}>
-          <div className="absolute inset-0 bg-black/50"></div>
-        </div>
+  <div className="relative z-10">
+    <motion.h2
+      className="text-3xl font-bold mb-10 text-center bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.3 }}
+      variants={fadeIn}
+    >
+      🎞 My Portfolio
+    </motion.h2>
 
-        <div className="relative z-10">
-          <motion.h2
-            className="text-3xl font-bold mb-10 text-center bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.3 }}
-            variants={fadeIn}
-          >
-            🎞 My Portofolio
-          </motion.h2>
+    <Suspense fallback={<p className="text-center text-gray-400">Loading videos...</p>}>
+      {/* LANDSCAPE VIDEOS */}
+      <div className="mb-16">
+        <motion.h3
+          className="text-2xl font-semibold mb-6 text-cyan-300"
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          📺 Landscape Videos
+        </motion.h3>
+        
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8"
+          variants={{
+            hidden: { opacity: 0 },
+            show: { opacity: 1, transition: { staggerChildren: 0.2 } },
+          }}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          {videos
+            .filter((video) => video.orientation === 'landscape')
+            .map((video) => (
+              <motion.div
+                key={video.id}
+                variants={{
+                  hidden: { opacity: 0, y: 40, scale: 0.95 },
+                  show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.4, ease: "easeOut" } },
+                }}
+                whileHover={{
+                  scale: 1.03,
+                  boxShadow: "0 0 25px rgba(6,182,212,0.4)",
+                }}
+                transition={{ duration: 0.2, ease: "easeOut" }}
+                className="rounded-xl overflow-hidden shadow-[0_0_10px_-5px_rgba(6,182,212,0.2)] border border-cyan-500/40 hover:border-cyan-400 transition-all duration-500"
+              >
+                <VideoCard title={video.title} url={video.url} />
+                <div className="p-4 text-center">
+                  <h3 className="text-base md:text-lg font-semibold text-cyan-400">{video.title}</h3>
+                </div>
+              </motion.div>
+            ))}
+        </motion.div>
+      </div>
 
-          <Suspense fallback={<p className="text-center text-gray-400">Loading videos...</p>}>
-            <motion.div
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8"
-              variants={{
-                hidden: { opacity: 0 },
-                show: { opacity: 1, transition: { staggerChildren: 0.2 } },
-              }}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.3 }}
-            >
-              {videos.map((video) => (
-                <motion.div
-                  key={video.id}
-                  variants={{
-                    hidden: { opacity: 0, y: 40, scale: 0.95 },
-                    show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.4, ease: "easeOut" } },
-                  }}
-                  whileHover={{
-                    scale: 1.03,
-                    boxShadow: "0 0 25px rgba(6,182,212,0.4)",
-                  }}
-                  transition={{ duration: 0.2, ease: "easeOut" }}
-                  className="rounded-xl overflow-hidden shadow-[0_0_10px_-5px_rgba(6,182,212,0.2)] border border-cyan-500/40 hover:border-cyan-400 transition-all duration-500"
-                  >
-                  <VideoCard title={video.title} url={video.url} />
-                  {/* Tambahan Judul */}
-                  <div className="p-4 text-center">
-                    <h3 className="text-base md:text-lg font-semibold text-cyan-400">{video.title}</h3>
-                  </div>
-                </motion.div>
-
-              ))}
-            </motion.div>
-          </Suspense>
-        </div>
-      </section>
+      {/* PORTRAIT VIDEOS */}
+<div>
+  <motion.h3
+    className="text-2xl font-semibold mb-6 text-cyan-300"
+    initial={{ opacity: 0, x: -20 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.5 }}
+  >
+    📱 Portrait Videos
+  </motion.h3>
+  
+  <motion.div
+    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8"
+    variants={{
+      hidden: { opacity: 0 },
+      show: { opacity: 1, transition: { staggerChildren: 0.2 } },
+    }}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: true, amount: 0.3 }}
+  >
+    {videos
+      .filter((video) => video.orientation === 'portrait')
+      .map((video) => (
+        <motion.div
+          key={video.id}
+          variants={{
+            hidden: { opacity: 0, y: 40, scale: 0.95 },
+            show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.4, ease: "easeOut" } },
+          }}
+          whileHover={{
+            scale: 1.03,
+            boxShadow: "0 0 25px rgba(6,182,212,0.4)",
+          }}
+          transition={{ duration: 0.2, ease: "easeOut" }}
+          className="rounded-xl overflow-hidden shadow-[0_0_10px_-5px_rgba(6,182,212,0.2)] border border-cyan-500/40 hover:border-cyan-400 transition-all duration-500"
+        >
+          <VideoCard title={video.title} url={video.url} orientation="portrait" />
+          <div className="p-4 text-center">
+            <h3 className="text-sm md:text-base font-semibold text-cyan-400">{video.title}</h3>
+          </div>
+        </motion.div>
+      ))}
+  </motion.div>
+</div>
+      
+    </Suspense>
+  </div>
+</section>
 
       {/* FOOTER */}
       <footer id="footer" className="bg-[#001829] text-gray-300 py-16 px-6 md:px-20">

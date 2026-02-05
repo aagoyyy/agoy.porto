@@ -1,13 +1,16 @@
 import { useState } from "react";
 
-export default function VideoCard({ title, url }) {
+export default function VideoCard({ title, url, orientation = "landscape" }) {
   const [isPlaying, setIsPlaying] = useState(false);
-  const videoId = url.split("/embed/")[1];
+  const videoId = url.split("/embed/")[1]?.split("?")[0]; // tambah split untuk handle parameter
   const thumbnail = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+  
+  // Tentukan aspect ratio berdasarkan orientation
+  const aspectRatio = orientation === "portrait" ? "aspect-[3/4]" : "aspect-video";
 
   return (
     <div
-      className="relative aspect-video rounded-xl overflow-hidden cursor-pointer bg-gray-800"
+      className={`relative ${aspectRatio} rounded-xl overflow-hidden cursor-pointer bg-gray-800`}
       onClick={() => setIsPlaying(true)}
     >
       {isPlaying ? (
