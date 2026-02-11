@@ -13,9 +13,9 @@ const videos = [
   { id: 6, title: "Dokumentasi Acara", url: "https://www.youtube.com/embed/wWJN5CgfDzc", orientation:"landscape" },
   { id: 7, title: "IDE ITU MURAH?", url: "https://www.youtube.com/embed/t4ANEizx5Ag", orientation: "portrait"},
   { id: 8, title: "STRATEGI CHINA", url: "https://www.youtube.com/embed/PTZvK5Y9WFQ", orientation: "portrait"},
-  { id: 9, title: "SHORT DRAMA", url: "https://www.youtube.com/embed/u0buD9Hj25c?autoplay=0&loop=1&playlist=u0buD9Hj25c", orientation: "portrait", orientation: "portrait"},
-  { id: 10, title: "Chance menjadi affiliator", url: "https://www.youtube.com/embed/uMigubV7eUU", orientation: "portrait", orientation: "portrait"}
-  { id: 11, title: "Tips Memulai Affiliate", url: "https://www.youtube.com/embed/iLGVv0Ugf0s", orientation: "portrait", orientation: "portrait"}
+  { id: 9, title: "SHORT DRAMA", url: "https://www.youtube.com/embed/u0buD9Hj25c", orientation: "portrait"},
+  { id: 10, title: "Chance menjadi affiliator", url: "https://www.youtube.com/embed/uMigubV7eUU", orientation: "portrait"},
+  { id: 11, title: "Tips Memulai Affiliate", url: "https://www.youtube.com/embed/iLGVv0Ugf0s", orientation: "portrait"}
 ];
 
 // ANIMATION VARIANTS
