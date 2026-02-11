@@ -302,7 +302,7 @@ function Home() {
   </motion.h3>
   
   <motion.div
-    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8"
+    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8"
     variants={{
       hidden: { opacity: 0 },
       show: { opacity: 1, transition: { staggerChildren: 0.2 } },
