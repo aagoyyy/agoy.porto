@@ -309,7 +309,7 @@ function Home() {
     }}
     initial="hidden"
     whileInView="show"
-    viewport={{ once: true, amount: 0.3 }}
+    viewport={{ once: true, amount: 0.1 }}
   >
     {videos
       .filter((video) => video.orientation === 'portrait')
