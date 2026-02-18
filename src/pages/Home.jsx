@@ -15,7 +15,9 @@ const videos = [
   { id: 8, title: "STRATEGI CHINA", url: "https://www.youtube.com/embed/PTZvK5Y9WFQ", orientation: "portrait"},
   { id: 9, title: "SHORT DRAMA", url: "https://www.youtube.com/embed/u0buD9Hj25c", orientation: "portrait"},
   { id: 10, title: "Chance menjadi affiliator", url: "https://www.youtube.com/embed/uMigubV7eUU", orientation: "portrait"},
-  { id: 11, title: "Tips Memulai Affiliate", url: "https://www.youtube.com/embed/iLGVv0Ugf0s", orientation: "portrait"}
+  { id: 11, title: "Tips Memulai Affiliate", url: "https://www.youtube.com/embed/iLGVv0Ugf0s", orientation: "portrait"},
+  { id: 12, title: "NABUNG = MISKIN", url: "https://www.youtube.com/embed/kXvyHHHUYfA", orientation: "portrait"},
+  { id: 13, title: "GAJI GEDE = SUSAH NABUNG", url: "https://www.youtube.com/embed/ISvl_asJcO4", orientation: "portrait"}
 ];
 
 // ANIMATION VARIANTS
