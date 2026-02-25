@@ -18,6 +18,9 @@ const videos = [
   { id: 11, title: "Tips Memulai Affiliate", url: "https://www.youtube.com/embed/iLGVv0Ugf0s", orientation: "portrait"},
   { id: 12, title: "NABUNG = MISKIN", url: "https://www.youtube.com/embed/kXvyHHHUYfA", orientation: "portrait"},
   { id: 13, title: "GAJI GEDE = SUSAH NABUNG", url: "https://www.youtube.com/embed/ISvl_asJcO4", orientation: "portrait"}
+  { id: 14, title: "NABUNG 500K KECIL?", url: "https://www.youtube.com/embed/irhTefGbdd4", orientation: "portrait"},
+  { id: 15, title: "PAYLATER ITU JAHAT", url: "https://www.youtube.com/embed/FyDioqmGkhM", orientation: "portrait"},
+  { id: 16, title: "3 JT BISA NABUNG?", url: "https://www.youtube.com/embed/3StQQKkh8io", orientation: "portrait"}
 ];
 
 // ANIMATION VARIANTS
