@@ -6,7 +6,7 @@ export default function VideoCard({ title, url, orientation = "landscape" }) {
   const thumbnail = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
   
   // Tentukan aspect ratio berdasarkan orientation
-  const aspectRatio = orientation === "portrait" ? "aspect-[3/4]" : "aspect-video";
+  const aspectRatio = orientation === "portrait" ? "aspect-[9/16]" : "aspect-video";
 
   return (
     <div

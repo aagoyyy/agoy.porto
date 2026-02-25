@@ -5,19 +5,22 @@ import profile from "../assets/profile.png";
 const VideoCard = lazy(() => import("../components/VideoCard")); // lazy load VideoCard
 
 const videos = [
+  //landscape video
   { id: 1, title: "Company Profile TEX20S", url: "https://www.youtube.com/embed/4hAE4ExzH44",orientation:"landscape" },
   { id: 2, title: "Visual Effect Sederhana", url: "https://www.youtube.com/embed/b3MAVGONTpo", orientation:"landscape" },
   { id: 3, title: "Liputan Fashion", url: "https://www.youtube.com/embed/HAdSXdZIgdI", orientation:"landscape" },
   { id: 4, title: "Remake Music Video - Sweet Scar", url: "https://www.youtube.com/embed/_fiDhl9BW0Y", orientation:"landscape" },
   { id: 5, title: "Gaming Anak-Anak", url: "https://www.youtube.com/embed/hq3BpVCnvH8", orientation:"landscape" },
   { id: 6, title: "Dokumentasi Acara", url: "https://www.youtube.com/embed/wWJN5CgfDzc", orientation:"landscape" },
+
+//porttrait video
   { id: 7, title: "IDE ITU MURAH?", url: "https://www.youtube.com/embed/t4ANEizx5Ag", orientation: "portrait"},
   { id: 8, title: "STRATEGI CHINA", url: "https://www.youtube.com/embed/PTZvK5Y9WFQ", orientation: "portrait"},
   { id: 9, title: "SHORT DRAMA", url: "https://www.youtube.com/embed/u0buD9Hj25c", orientation: "portrait"},
-  { id: 10, title: "Chance menjadi affiliator", url: "https://www.youtube.com/embed/uMigubV7eUU", orientation: "portrait"},
-  { id: 11, title: "Tips Memulai Affiliate", url: "https://www.youtube.com/embed/iLGVv0Ugf0s", orientation: "portrait"},
+  { id: 10, title: "MENJADI AFFILIATOR", url: "https://www.youtube.com/embed/uMigubV7eUU", orientation: "portrait"},
+  { id: 11, title: "MEMULAI AFFILIATE", url: "https://www.youtube.com/embed/iLGVv0Ugf0s", orientation: "portrait"},
   { id: 12, title: "NABUNG = MISKIN", url: "https://www.youtube.com/embed/kXvyHHHUYfA", orientation: "portrait"},
-  { id: 13, title: "GAJI GEDE = SUSAH NABUNG", url: "https://www.youtube.com/embed/ISvl_asJcO4", orientation: "portrait"},
+  { id: 13, title: "SUSAH NABUNG", url: "https://www.youtube.com/embed/ISvl_asJcO4", orientation: "portrait"},
   { id: 14, title: "NABUNG 500K KECIL?", url: "https://www.youtube.com/embed/irhTefGbdd4", orientation: "portrait"},
   { id: 15, title: "PAYLATER ITU JAHAT", url: "https://www.youtube.com/embed/FyDioqmGkhM", orientation: "portrait"},
   { id: 16, title: "3 JT BISA NABUNG?", url: "https://www.youtube.com/embed/3StQQKkh8io", orientation: "portrait"}
@@ -307,7 +310,7 @@ function Home() {
   </motion.h3>
   
   <motion.div
-    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8"
+    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6 lg:gap-8"
     variants={{
       hidden: { opacity: 0 },
       show: { opacity: 1, transition: { staggerChildren: 0.2 } },
