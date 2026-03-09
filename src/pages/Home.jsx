@@ -23,7 +23,14 @@ const videos = [
   { id: 13, title: "SUSAH NABUNG", url: "https://www.youtube.com/embed/ISvl_asJcO4", orientation: "portrait"},
   { id: 14, title: "NABUNG 500K KECIL?", url: "https://www.youtube.com/embed/irhTefGbdd4", orientation: "portrait"},
   { id: 15, title: "PAYLATER ITU JAHAT", url: "https://www.youtube.com/embed/FyDioqmGkhM", orientation: "portrait"},
-  { id: 16, title: "3 JT BISA NABUNG?", url: "https://www.youtube.com/embed/3StQQKkh8io", orientation: "portrait"}
+  { id: 16, title: "3 JT BISA NABUNG?", url: "https://www.youtube.com/embed/3StQQKkh8io", orientation: "portrait"},
+  { id: 17, title: "PAYLATER JAHAT", url: "https://www.youtube.com/embed/FyDioqmGkhM", orientation: "portrait"},
+  { id: 18, title: "NABUNG 500K", url: "https://www.youtube.com/embed/irhTefGbdd4", orientation: "portrait"},
+  { id: 19, title: "DANA DARURAT", url: "https://www.youtube.com/embed/QM1LIEhar-M", orientation: "portrait"},
+  { id: 20, title: "KERJA KERAS", url: "https://www.youtube.com/embed/F0HI0cnKJk0", orientation: "portrait"},
+  { id: 21, title: "NYICIL BOLEH?", url: "https://www.youtube.com/embed/F0HI0cnKJk0", orientation: "portrait"},
+  { id: 22, title: "MISKIN VS KAYA", url: "https://www.youtube.com/embed/M7Va5XfI3Iw", orientation: "portrait"},
+  { id: 23, title: "TAKUT INVESTASI?", url: "https://www.youtube.com/embed/OFfnpawOvI8", orientation: "portrait"}
 ];
 
 // ANIMATION VARIANTS
